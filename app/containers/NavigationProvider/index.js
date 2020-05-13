@@ -51,7 +51,7 @@ export default function NavigationProvider(props) {
   return (
     <MuiThemeProvider theme={theme}>
       <SideBar {...props} />
-      <Switch>
+      {/* <Switch>
         <AuthRoute exact path="/dashboard" component={DashboardPage} />
         <AuthRoute exact path="/projects" component={ProjectsPage} />
         <AuthRoute exact path="/project/:id" component={ProjectPage} />
@@ -62,7 +62,7 @@ export default function NavigationProvider(props) {
         />
         <AuthRoute exact path="/settings" component={SettingsPage} />
         <NotFoundHandler {...props} />
-      </Switch>
+      </Switch> */}
     </MuiThemeProvider>
   );
 }
