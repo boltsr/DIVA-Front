@@ -55,7 +55,7 @@ export default function NavigationProvider(props) {
         <AuthRoute exact path="/dashboard" component={DashboardPage} />
         <AuthRoute exact path="/projects" component={ProjectsPage} />
         <AuthRoute exact path="/project/:id" component={ProjectPage} />
-        <AuthRoute
+      <AuthRoute
           exact
           path="/project/:id/action/add"
           component={AddActionPage}
