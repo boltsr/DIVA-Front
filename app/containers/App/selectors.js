@@ -19,17 +19,17 @@ const makeSelectUser = () =>
 const makeSelectIsLoading = () =>
   createSelector(selectGlobal, globalState => globalState.get('isLoading'));
 
-// // login & logout
-// const makeSelectLoggedIn = () =>
-//   createSelector(selectGlobal, loginState => loginState.get('loggedIn'));
-// const makeSelectLoginError = () =>
-//   createSelector(selectGlobal, loginState => loginState.get('loginError'));
-// const makeSelectLoginResponse = () =>
-//   createSelector(selectGlobal, loginState => loginState.get('loginResponse'));
-// const makeSelectRefreshError = () =>
-//   createSelector(selectGlobal, loginState => loginState.get('refreshError'));
-// const makeSelectLoggedOut = () =>
-//   createSelector(selectGlobal, loginState => loginState.get('loggedOut'));
+// login & logout
+const makeSelectLoggedIn = () =>
+  createSelector(selectGlobal, loginState => loginState.get('loggedIn'));
+const makeSelectLoginError = () =>
+  createSelector(selectGlobal, loginState => loginState.get('loginError'));
+const makeSelectLoginResponse = () =>
+  createSelector(selectGlobal, loginState => loginState.get('loginResponse'));
+const makeSelectRefreshError = () =>
+  createSelector(selectGlobal, loginState => loginState.get('refreshError'));
+const makeSelectLoggedOut = () =>
+  createSelector(selectGlobal, loginState => loginState.get('loggedOut'));
 
 // update user profile
 const makeSelectUserProfileError = () =>
