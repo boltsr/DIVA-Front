@@ -57,16 +57,16 @@ export function* doInvalidateToken(obj) {
   }
 }
 
-export function* doUpdateUserProfile(obj) {
-  const requestURL = 'http://localhost:3001/api/1.0/updateUserProfile';
-  try {
-    // Call our request helper (see 'utils/request')
-    const updateResponse = yield call(updateUserProfile, requestURL, obj);
-    yield put(updateUserProfileSuccess(updateResponse));
-  } catch (err) {
-    yield put(updateUserProfileError(err));
-  }
-}
+// export function* doUpdateUserProfile(obj) {
+//   const requestURL = 'http://localhost:3001/api/1.0/updateUserProfile';
+//   try {
+//     // Call our request helper (see 'utils/request')
+//     const updateResponse = yield call(updateUserProfile, requestURL, obj);
+//     yield put(updateUserProfileSuccess(updateResponse));
+//   } catch (err) {
+//     yield put(updateUserProfileError(err));
+//   }
+// }
 
 export function* doUpdateUserPassword(obj) {
   const requestURL = 'http://localhost:3001/api/1.0/updateUserPassword';
